@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 offset-md-2">
+            <h1>Login Page</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Login</button> or
+                <a class="btn btn-secondary" href="{% url 'main_app:register' %}">Register </a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
