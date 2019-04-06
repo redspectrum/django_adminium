@@ -1,9 +1,9 @@
 # PyCharm
-.idea/
+.idea\
 
 # python
 __pycache__/
 
 # pyenv
 .python-version
-venv/
+venv\
